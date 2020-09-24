@@ -8,17 +8,14 @@
     var isMaster =
       document.querySelector("span.commit-ref a span").innerText === "master";
 
-    if (isMaster) {
-      document
-        .querySelector('.width-full.select-menu-item[value="merge"]')
-        .click();
-    } else {
-      document
-        .querySelector('.width-full.select-menu-item[value="squash"]')
-        .click();
-    }
+    var button = isMaster
+      ? document.querySelector('.width-full.select-menu-item[value="merge"]')
+      : document.querySelector('.width-full.select-menu-item[value="squash"]');
 
-    keepScanning = false;
+    if (button) {
+      keepScanning = false;
+      button.click();
+    }
   }
 
   const interval = 1000;
