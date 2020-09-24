@@ -1,0 +1,12 @@
+{
+    "name": "GitHub extension to set commit button to master and squash to branch",
+    "version": "1.0",
+    "description": "Sets commit button to master and squash to branch.",
+    "manifest_version": 2,
+      "content_scripts": [{
+          "matches": ["https://github.com/*"],
+          "js": ["main.js"],
+          "run_at": "document_end",
+          "all_frames": true
+      }]
+  }
