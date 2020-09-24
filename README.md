@@ -12,3 +12,6 @@ Buttons should be correctly set. Commit button will be set if merge it to `maste
 
 1. Visit [chrome://extensions/](chrome://extensions/).
 2. Disable or remove the extension.
+
+
+test
