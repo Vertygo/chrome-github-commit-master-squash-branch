@@ -8,10 +8,13 @@
       document.querySelector("span.commit-ref a span").innerText === "master";
 
     if (isMaster) {
+      console.debug("selecting commit to master");
+
       document
         .querySelector('.width-full.select-menu-item[value="merge"]')
         .click();
     } else {
+      console.debug("selecting squash to branch");
       document
         .querySelector('.width-full.select-menu-item[value="squash"]')
         .click();
